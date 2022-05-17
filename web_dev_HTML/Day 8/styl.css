@@ -1,0 +1,29 @@
+    li {
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        float: left;
+        color: gold;
+    }
+    
+    li :a {
+        display: block;
+        justify-content: space-evenly;
+        margin: 0px;
+        list-style: none;
+        padding: 2px 30px;
+        text-align: justify;
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+        color: gold;
+    }
+    
+    nav {
+        margin: 0px;
+        padding: 15px 15px;
+        text-align: center;
+        padding: 10px 10px;
+        color: grey;
+        background: black;
+    }

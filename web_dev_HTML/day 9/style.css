@@ -1,0 +1,45 @@
+                    ul {
+                        overflow: hidden;
+                        background-color: rgb(231, 175, 155);
+                        ;
+                    }
+                    
+                    li {
+                        display: block;
+                        align: center;
+                        padding: 15px 15px;
+                        list-style-type: none;
+                        text-decoration: none;
+                        color: Red;
+                        float: left;
+                    }
+                    
+                    li a:hover {
+                        padding: 15px 15px;
+                        background-color: rgb(250, 236, 79);
+                        color: orange;
+                    }
+                    
+                    h1 {
+                        color: rgb(205, 39, 205);
+                        text-align: center;
+                    }
+                    
+                    table {
+                        text-align: center;
+                        border: "6";
+                    }
+                    
+                    table tr {
+                        text-align: center;
+                        border: "6";
+                        table-style: none;
+                    }
+                    
+                    button {
+                        display: block;
+                        padding: 15px 15px;
+                        float: left;
+                        background-color: blue;
+                        color: white;
+                    }
