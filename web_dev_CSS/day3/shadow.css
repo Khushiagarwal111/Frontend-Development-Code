@@ -1,0 +1,32 @@
+                            h1 {
+                                text-shadow: 0px 0px 5px yellow;
+                                text-align: center;
+                            }
+                            
+                            .shadow {
+                                box-shadow: 2px 2px 6px 2px lightgrey;
+                                height: 180px;
+                                width: 300px;
+                            }
+                            
+                            #one {
+                                float: right;
+                                box-shadow: 20px 20px 20px 20px pink;
+                            }
+                            
+                            #two {
+                                box-shadow: 50p 50px 60px 60px rgb(232, 11, 81);
+                                background-color: aqua;
+                                height: 500px;
+                                width: 600px;
+                                border: 1px solid black;
+                            }
+                            
+                            div>p {
+                                padding: 5px;
+                                background-color: blanchedalmond;
+                            }
+                            
+                            h1+h2 {
+                                background-color: violet;
+                            }

@@ -1,0 +1,106 @@
+.li {
+    color: black;
+    float: left;
+    margin: 10px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    background-color: red;
+    color: black;
+    display: block;
+}
+
+ul {
+    color: black;
+}
+
+.li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.li a:hover {
+    padding: 18px 18px;
+    background-color: #ccc;
+    color: yellow;
+}
+
+.container {
+    display: block;
+    height: 760px;
+    width: 500px;
+    background-color: rgb(200, 218, 232);
+    border-radius: 4px;
+}
+
+img {
+    height: 300px;
+    width: 460px;
+    border-radius: 2px;
+    border: 2px solid azure;
+    display: block;
+    align-self: center;
+    margin-bottom: 18px round;
+}
+
+.details {
+    border-radius: 2px yellow;
+    margin: 2px;
+    padding: 2px;
+    display: block;
+    height: 200px;
+    width: 480;
+    background-color: rgb(165, 211, 228);
+}
+
+.card {
+    padding: 10px 10px;
+    margin: 10px;
+    height: 720px;
+    width: 480px;
+    display: block;
+    background-color: rgb(90, 115, 115);
+    color: rgb(209, 161, 67);
+}
+
+.heading {
+    display: block;
+    align-self: center;
+    padding: 2px;
+    margin: 2px;
+    height: 120px;
+    width: 480;
+    border-radius: 4px;
+    background-color: rgb(231, 180, 180);
+    color: rgb(78, 68, 48);
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(206, 210, 216)
+}
+
+button:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: rgb(159, 201, 228);
+}
+
+button:active {
+    color: blue;
+    background-color: rgb(200, 200, 200)
+}
+
+* {
+    padding: 1px;
+    margin: 1px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 1200px;
+}

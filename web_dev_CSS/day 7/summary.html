@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--selectores
+        combinators (child selector) 
+        
+        pseudo classes first-child last-child nth-child() nth-last-child()
+
+        n=0
+    -->
+    <style>
+      /*   p:nth-child(3)::first-letter {
+        background-color: blue;
+      } */
+
+      p {
+        font-size: large;
+      }
+
+      p:hover::after {
+        content: "*";
+        background-color: aliceblue;
+        color: blue;
+      }
+      /*   p:hover::before {
+        content: "Hiiiii";
+        background-color: aliceblue;
+        color: blue;
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>FirstName</p>
+    </div>
+  </body>
+</html>

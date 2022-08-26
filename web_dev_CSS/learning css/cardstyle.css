@@ -1,0 +1,45 @@
+        /*universal colorselector**/
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            margin: 4%;
+            background-color: wheat;
+        }
+        
+        .card {
+            padding: 20px;
+            width: 25%;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 2%;
+            background-color: ghostwhite;
+        }
+        
+        .title {
+            padding: 3px;
+        }
+        
+        .image img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .details {
+            text-align: jusity;
+            padding: 10px;
+            background-color: azure;
+        }
+        
+        button {
+            background-color: hotpink;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 5px solid #ccc;
+        }
+        /*% is relative unit and px is absolute unit */

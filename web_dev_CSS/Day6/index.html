@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Day 6:Animation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style">
+        <style>
+      .container {
+        border: 1px solid yellow;
+        background-color: beige;
+        margin-bottom:10px;
+        margin-color: brown;
+        /* height: 700px;
+        width: 1400px; */
+        }
+
+      .cycle {
+        width: 50%;
+        height: 50%;
+         /*transition:property transition-duration timing-function delay*/
+        transition: transform 3s cubic-bezier(0.89, -0.12, 0.22, 1.34) 2s ;
+    
+      }
+      .cycle img {
+        width: 100%;
+         }
+      .container:hover .cycle{
+          /*transform:translateX(100%);
+          animation-name:Cycling;
+          animation-duration:3s;
+          animation-iteration-count:4;
+          animation-fill-mode:forwards;
+          animation-timing-function:ease-in-out;*/
+          animation:Cycling 3s ease-in-out;
+          }
+
+@keyframes Cycling{
+    */from{
+
+    }
+    To{
+  } *//*
+    0%{transform:translateX(33%);
+    }
+    33%{transform:translateY(100%);
+    }
+33%{transform:translateX(50%);
+    }
+50%{transform:translateY(100%);
+    }*/
+
+   0%{transform:translateX(10%);
+    }
+    33%{transform:translateY(100%);
+    }
+    66%{transform:translateX(100%), translateY(100%);
+    }
+100%{transform:translateY(100%), translateX(100%);
+    }
+
+}
+      .road{
+          height:50%;
+          width:100%;
+          background-color:brown;
+          border-bottom: 15px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cycle">
+        <img src="./img/cycle.png" />
+      </div>
+<div class="road">
+
+
+</div>   
+
+   </div>
+    
+   
+        
+        <script src="" async defer></script>
+    </body>
+</html>

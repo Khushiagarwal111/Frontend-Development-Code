@@ -1,0 +1,165 @@
+/* h1 {
+    color: red;
+}
+
+.one {
+    color: green;
+}
+
+.two {
+    color: yellow;
+}
+
+.container2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+    color: red;
+}
+
+.first {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    font-size: large;
+    border: 20px solid red;
+    Background-color: blue;
+    padding: 20px;
+}
+
+.second {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    font-size: large;
+    background-color: purple;
+}
+
+* {
+    /* box-sizing: border-box;
+    */
+
+
+/* margin: 0px;
+padding: 0px;
+
+}
+.spanone {
+    display: inline;
+    background-color: burlywood;
+    margin: 200px;
+}
+.spantwo {
+    color: rgb(102, 164, 102);
+    height: 40%;
+    width: 200%;
+    margin: 3px;
+    padding: 0px;
+    display: list-item;
+    background-color: rgb(221, 240, 238)
+}
+img {
+    margin: 20px;
+    padding: 30px;
+    display: block;
+    height: 400px;
+    width: 200px;
+}
+.para1 {
+    display: none;
+    background-color: mediumvioletred
+}
+.para2 {
+    display: none;
+    background-color: khaki
+}
+.paraoverflow {
+    height: 400px;
+    width: 200px;
+    border-radius: 2px;
+    margin: 30px;
+    padding: 10px;
+}
+.container {
+    display: overflow;
+    width: 60%;
+    height: 40px;
+    margin: 30px;
+}
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10px;
+}
+
+.first {
+    background-color: blue;
+    font-size: large;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.second {
+    background-color: blueviolet;
+    font-size: large;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.spanone {
+    background-color: blueviolet;
+    display: inline;
+    height: 200px;
+    width: 400px;
+}
+
+.spantwo {
+    background-color: antiquewhite;
+    display: inline;
+}
+
+.spanthree {
+    background-color: blue;
+    display: inline;
+}
+
+.paraone {
+    background-color: blueviolet;
+    display: inline;
+}
+
+.paratwo {
+    background-color: antiquewhite;
+    display: inline;
+}
+
+.parathree {
+    background-color: blue;
+}
+
+img {
+    height: 500px;
+    width: 300px;
+}
+
+.paraoverflow {
+    height: 3g00px;
+    width: 400px;
+    overflow: scroll;
+    border: 2px solid black;
+}

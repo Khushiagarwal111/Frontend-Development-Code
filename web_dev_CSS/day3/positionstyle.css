@@ -1,0 +1,41 @@
+    .container {
+        border: 3px solid black;
+        padding: 2px;
+        height: 5000px;
+    }
+    
+    .rectangle {
+        margin: 2x;
+        border: 3px solid blue;
+        width: 200px;
+        width: 300px;
+        display: inline-block;
+    }
+    
+    #one {
+        position: absolute;
+        top: 75px;
+        left: 75px;
+    }
+    /* 14/4/2022
+    absolute: relative to parent
+    relative:relative to normal position;
+    fixed: fixed to viewport
+    static:
+    sticky:
+
+     */
+    
+    #two {
+        position: relative;
+        top: 75px;
+        left: 75px;
+    }
+    
+    #three {
+        position: fixed;
+    }
+    
+    #fourth {
+        /*position: sticky;*/
+    }

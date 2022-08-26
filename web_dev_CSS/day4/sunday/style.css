@@ -1,0 +1,26 @@
+.flex-item {
+    color: blue;
+    padding: 2px 10px;
+    /* margin: 2px 2px 2px 2px; */
+    border-radius: 10px;
+    border: 1px solid blue;
+    display: inline-block;
+    background-color: Azure;
+    /* border-color: blue;
+    border-color: 4px solid blue;
+    border-color: #0000ff; */
+    border-style: solid;
+    border-color: #0000ff;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.flex-item a:hover {
+    /* color: #ccc; */
+    background-color: blue;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <!--selectors 
+        pseudoclass & pseudo element nth-child() nth-last-child()-->
+    <style>
+    /* here n can be 1,2,3,4,5,6 these are paragraph number
+     p is the child of container....means p should have a parent i.e container*/
+     /* p:first-child {
+        background-color:blue;
+    }
+    p:last-child{
+        background-color:pink;
+    }
+   p:nth-child(2n+4) { 
+        background-color:yellow;
+        } */
+
+     p:nth-child(2)::last-letter{
+         color:blue;
+         font-style:italic;
+         font-weight:bold;
+         background-color:azure;
+     } 
+     p:nth-child(2)::first-line{
+         color:red;
+     } 
+
+     h1:hover::after{
+         content: " Morning";
+         display: inline;
+         color:red;
+         border-bottom: 1px solid blue;
+
+     }
+
+          h1:hover::before{
+         content: " Morning";
+         display: inline;
+         color:red;
+         border-bottom: 1px solid blue;
+
+     }
+     h2::after{
+         content:"*";
+         display: inline;
+         color:red;
+     }
+    </style>
+    </head>
+    <body>
+<div class="container">
+<h1> Good</h1>
+<h2>First Name</h2>
+<p> 
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quaerat commodi iste dignissimos praesentium accusantium doloremque voluptatibus nisi eos aliquam. Similique modi quod reprehenderit accusamus at velit cumque. Cupiditate, facere maxime optio quas quisquam labore excepturi minus laboriosam velit odit consequatur repellat voluptatem aliquam repellendus. Exercitationem consequuntur quaerat quod iusto, blanditiis saepe vero cum maiores, eius ad qui nihil autem quis! Molestias sint error blanditiis deleniti, cum culpa, saepe quibusdam illum provident esse ut repellendus repellat quidem amet commodi soluta expedita, consequatur iusto facilis nostrum at temporibus fugiat tempora incidunt! Officiis incidunt iure quisquam deleniti dolorum consectetur odio, asperiores libero.
+
+</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quaerat commodi iste dignissimos praesentium accusantium doloremque voluptatibus nisi eos aliquam. Similique modi quod reprehenderit accusamus at velit cumque. Cupiditate, facere maxime optio quas quisquam labore excepturi minus laboriosam velit odit consequatur repellat voluptatem aliquam repellendus. Exercitationem consequuntur quaerat quod iusto, blanditiis saepe vero cum maiores, eius ad qui nihil autem quis! Molestias sint error blanditiis deleniti, cum culpa, saepe quibusdam illum provident esse ut repellendus repellat quidem amet commodi soluta expedita, consequatur iusto facilis nostrum at temporibus fugiat tempora incidunt! Officiis incidunt iure quisquam deleniti dolorum consectetur odio, asperiores libero.
+</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quaerat commodi iste dignissimos praesentium accusantium doloremque voluptatibus nisi eos aliquam. Similique modi quod reprehenderit accusamus at velit cumque. Cupiditate, facere maxime optio quas quisquam labore excepturi minus laboriosam velit odit consequatur repellat voluptatem aliquam repellendus. Exercitationem consequuntur quaerat quod iusto, blanditiis saepe vero cum maiores, eius ad qui nihil autem quis! Molestias sint error blanditiis deleniti, cum culpa, saepe quibusdam illum provident esse ut repellendus repellat quidem amet commodi soluta expedita, consequatur iusto facilis nostrum at temporibus fugiat tempora incidunt! Officiis incidunt iure quisquam deleniti dolorum consectetur odio, asperiores libero.
+</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quaerat commodi iste dignissimos praesentium accusantium doloremque voluptatibus nisi eos aliquam. Similique modi quod reprehenderit accusamus at velit cumque. Cupiditate, facere maxime optio quas quisquam labore excepturi minus laboriosam velit odit consequatur repellat voluptatem aliquam repellendus. Exercitationem consequuntur quaerat quod iusto, blanditiis saepe vero cum maiores, eius ad qui nihil autem quis! Molestias sint error blanditiis deleniti, cum culpa, saepe quibusdam illum provident esse ut repellendus repellat quidem amet commodi soluta expedita, consequatur iusto facilis nostrum at temporibus fugiat tempora incidunt! Officiis incidunt iure quisquam deleniti dolorum consectetur odio, asperiores libero.
+</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quaerat commodi iste dignissimos praesentium accusantium doloremque voluptatibus nisi eos aliquam. Similique modi quod reprehenderit accusamus at velit cumque. Cupiditate, facere maxime optio quas quisquam labore excepturi minus laboriosam velit odit consequatur repellat voluptatem aliquam repellendus. Exercitationem consequuntur quaerat quod iusto, blanditiis saepe vero cum maiores, eius ad qui nihil autem quis! Molestias sint error blanditiis deleniti, cum culpa, saepe quibusdam illum provident esse ut repellendus repellat quidem amet commodi soluta expedita, consequatur iusto facilis nostrum at temporibus fugiat tempora incidunt! Officiis incidunt iure quisquam deleniti dolorum consectetur odio, asperiores libero.
+</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti quaerat commodi iste dignissimos praesentium accusantium doloremque voluptatibus nisi eos aliquam. Similique modi quod reprehenderit accusamus at velit cumque. Cupiditate, facere maxime optio quas quisquam labore excepturi minus laboriosam velit odit consequatur repellat voluptatem aliquam repellendus. Exercitationem consequuntur quaerat quod iusto, blanditiis saepe vero cum maiores, eius ad qui nihil autem quis! Molestias sint error blanditiis deleniti, cum culpa, saepe quibusdam illum provident esse ut repellendus repellat quidem amet commodi soluta expedita, consequatur iusto facilis nostrum at temporibus fugiat tempora incidunt! Officiis incidunt iure quisquam deleniti dolorum consectetur odio, asperiores libero.
+</p>
+</div>        
+        <script src="" async defer></script>
+    </body>
+</html>

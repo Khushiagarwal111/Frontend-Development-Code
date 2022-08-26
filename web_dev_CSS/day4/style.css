@@ -1,0 +1,27 @@
+                        .flex-container {
+                            background-color: rgb(254, 254, 228);
+                            /* display: flex;
+                            flex-wrap: wrap;
+                            flex-direction: row; */
+                            align-items: baseline;
+                            justify-content: center;
+                            height: 400px;
+                        }
+                        /* aloigning at center */
+                        /* designing child div  */
+                        /* using child selector */
+                        
+                        .flex-container>div {
+                            width: 200px;
+                            background-color: aqua;
+                            font-size: 30px;
+                            width: 200px;
+                            margin: 10px;
+                            padding: 15px;
+                            display: inline-block;
+                        }
+                        /* }flex wrap  */
+                        
+                        .flex-item {
+                            flex-wrap: wrap;
+                        }

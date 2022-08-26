@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+  div {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid black;
+    background-color:yellow;
+  }
+
+  
+  #rect2 {
+    background-color: chartreuse;
+    top: 150px;
+    left: 100px;
+    z-index:1;
+    opacity: 0.08;
+  }
+  #rect3 {
+    background-color: brown;
+    top: 200px;
+    left: 150px;
+    z-index:3;
+    opacity: 0.12;
+  }
+  #rect1 {
+    background-color: aqua;
+    top: 250px;
+    left: 200px;
+    z-index:2;
+    opacity: 0.11;
+  }
+ rect1:hover::before{
+   transition: translateX(200%);
+ }
+
+ h1::before{
+   transform:scaleX(0);
+   transform-origin:bottom right;
+
+ }
+ h1:hover::before{
+    transform:scaleX(3);
+   transform-origin:bottom left;
+
+ }
+
+  h1::before{
+    content:" ";
+    background-color:aqua;
+    display:block;
+    position:absolute;
+    transform:scaleX(0);
+    transition: transform 0.5s ease-in;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+
+ }
+
+  h1::after{
+    content:" ";
+    background-color:red;
+    display:block;
+    position:absolute;
+    transform:scaleX(0);
+    transition: transform 0.2s ease-in;
+    top:100;
+    left:100;
+    right:0;
+    bottom:0;
+    z-index:-1;
+
+ }
+    </style>
+  </head>
+  <body>
+    <div id="rect1"></div>
+    <div id="rect2"></div>
+    <div id="rect3"></div>
+    <h1>Headingggggggg hereeee</h1>
+
+  </body>
+</html>

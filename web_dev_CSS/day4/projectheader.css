@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 16px 78px;
+    align-items: center;
+}
+
+.logo1 {
+    width: 130px;
+    font-size: 32px;
+    font-weight: 1000;
+    color: rgb(29, 29, 250);
+    font-family: raleway, sans-serif;
+    text-shadow: 0px 0px 5px 5px rgb(120, 118, 118);
+}
+
+.logo2 {
+    margin: 0px;
+    font-weight: 500;
+    font-family: raleway, sans-serif;
+    font-style: italic;
+}
+
+.i {
+    margin-left: 10px;
+    padding-left: 12px;
+}
+
+main {
+    background-color: azure
+}

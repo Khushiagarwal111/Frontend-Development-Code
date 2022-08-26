@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+.one {
+    color: green;
+}
+
+.two {
+    color: yellow;
+}
+
+.container {
+    display: block;
+    width: 60%;
+    height: 40px;
+}
+
+.container2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
