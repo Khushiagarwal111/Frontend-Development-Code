@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+<!-- 18/may/2022 -->
+<!-- setTimeOut/ TimeInterval/my clock /todays date-->
+<!--<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./app.css">
+    <style>
+        .conatiner {
+            text-align: center;
+            color: antiquewhite
+        }
+        
+        .time {
+            color: purple;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+           
+My clock!!
+<h1 id="time">
+</h1>
+</div>
+<script>
+    //function myName(fname, lname) {
+    //console.log("My name is " +
+    //fname + " " + lname)
+    //}
+    //myName('Gargi', 'Chakraborty');
+
+    //setTimeout(myName, 5000, 'khushi', 'Agarwal'); // runs fn after a certain amount of time
+    //setTimeout(12000, 'heyyyyyyyyyy', 'javascripttt'); // runs fn after a certain amount of time 
+
+// timeInterval = setTimeout(myName, 5000, 'khushi', 'Agarwal'); //console.log(timeInterval); // clearTimeout(timeInterval); //set interrval //2000 means 2 sec // timeInterval = setInterval(myName, 6000, 'khushi', 'Agarwal') //clearInterval(timeInterval);
+//cannot call fn directly as undefined would come in console //so dont call fn inside setTimeOut //setTimeout(myName(), 500, 'khushi'); function myClock() { let time = new Date(); console.log(time); const neet = document.querySelector("#time") neet.innerHTML(time)
+} setInterval(myClock, 4000);
+< // myClock(); function myClock() { let today=n ew Date(); let time=t oday.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds(); let date=t oday.getDate + '-' + (today.getMonth() + 1) + '-' + today.getFullYear()
+    let dateTimer=` my date ${date} and the clock says ${time}` console.log(time) } </script>
+   -->
+<!-- <script src="./script.js" async defer> -->
+<!-- </script> -->
+<!-- </body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            text-align: center;
+            font-size: 40px;
+        }
+        
+        #time {
+            font-size: 50px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        My Clock!
+        <h1 id="time"> </h1>
+    </div>
+    <script>
+        //setTimeout  - this let's us run a function after a certain amount / interval of time
+        function myName(fname, lname) {
+            console.log("My name is " + fname + " " + lname)
+        }
+        myName('Gargi', 'Chakraborty')
+        setTimeout(myName, 6000, 'Gargi', 'Chakraborty') // function_name, no_of_milli_seconds, argumets
+        timeInterval = setTimeout(myName, 5000, 'Gargi', 'Chakraborty') // function_name, no_of_milli_seconds, argumets
+        console.log(timeInterval)
+        clearTimeout(timeInterval)
+
+        //setInt - this let 's us run a function repeatedly after a certain amount / interval of time
+        timeInterval = setInterval(myName, 5000, 'Gargi', 'Chakraborty')
+        clearInterval(timeInterval)
+        setTimeout(myName(), 5000, "Gargi", "Chakraborty") // don't call the function inside your settimeout
+
+
+        function myClock() {
+
+            /*  let time= new Date();
+             console.log(time)
+             const nitin=document.querySelector('#time')
+             nitin.innerHTML= time */
+            let today1 = new Date();
+            let time = today1.getHours() + ':' + today1.getMinutes() + ':' + today1.getSeconds()
+            let date = today1.getDate() + '-' + (today1.getMonth() + 1) + '-' + today1.getFullYear()
+            let dateTime = `my date ${date} and the clock says ${time}`
+            console.log(time)
+            const myDateTime = document.querySelector('#time')
+            myDateTime.innerHTML = dateTime
+
+        }
+
+        //myClock()
+        setInterval(myClock, 1000)
+    </script>
+</body>
+
+</html>

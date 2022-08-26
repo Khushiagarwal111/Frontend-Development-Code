@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>http: promises</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <script>
+        //promises
+        // this is a page request function
+        // it will take 1 second to resolve or reject the promise
+        //depending on the url passing
+        const pageRequest = (url) => {
+            return new Promise((resolve, reject) => {
+
+                setTimeout(() => {
+                    const pages = {
+                        '/users': [{
+                            id: 1,
+                            username: 'Asha'
+                        }, {
+                            id: 2,
+                            username: 'Gargi'
+                        }],
+                        '/users/1': {
+                            id: 1,
+                            username: 'Asha',
+                            city: 'kolkata',
+                            bestblogid: 111
+                        },
+                        '/users/2': {
+                            id: 2,
+                            username: 'Gargi',
+                            city: 'bangalore',
+                            bestblogid: 122
+                        },
+                        '/blogs/111': {
+                            id: 111,
+                            info: "here is my daughter's Bangalore post "
+                        }
+                        '/home': "This is my home page!",
+                        '/about': "This is my about page!"
+                    }
+
+                    const data = pages[url];
+                    if (data) {
+                        resolve({
+                            status: 100,
+                            data
+                        })
+                    } else {
+                        reject({
+                            status: 404,
+
+                        })
+                    }
+                }, 1000);
+            })
+        }
+
+        pageRequest('/users')
+            .then((res) => {
+                //console.log('Data of users', res.data)
+                console.log('Data of users', res)
+                const id = res.data[0].id
+                    //console.log('Status', res.status)
+                console.log("request success");
+                return pageRequest(`/users/${id}`);
+            })
+            .then((res) => {
+                console.log("my blog id", res);
+                const blogid = res.databestblogid;
+                return pageRequest('/blogs/${blogid}')
+
+            })
+            .then((res) => {
+                console.log("best blog details", res)
+            })
+            .catch((err) => {
+                console.log('Status', res.status)
+                console.log(" Couldn't finf blog details :request failure ")
+            })
+    </script>
+    //
+    <!-- <script src="./script.js" async defer></script> -->
+</body>
+
+</html>

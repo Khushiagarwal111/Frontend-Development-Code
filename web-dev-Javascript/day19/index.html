@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practice Problem</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/script.css">
+    <style>
+        body {
+            background: linear-gradient(to right, white, skyblue, pink, purple)
+        }
+        
+        .container #input {
+            box-shadow: inset 1px 1px 2px gray;
+            padding: 10px;
+            color: black;
+            font-weight: bold;
+            width: 250px;
+        }
+        
+        #btn {
+            background: purple;
+            color: white;
+            padding: 8px;
+            box-shadow: 5px;
+            border-radius: 5px;
+        }
+        
+        .container {
+            position: absolute;
+            top: 100px;
+            left: 450px;
+        }
+        
+        .image img {
+            top: 220px;
+            left: 300px;
+            /* top: 400px; */
+            width: 400px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shopping list</h1>
+    <div class="image">
+        <img src="https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+    </div>
+    <div class="container">
+        <!-- <div class="card">
+            <a href="https://shoplane.netlify.app/product.html?product_id=1">
+                <div class="image">
+                    <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg " />
+                </div>
+                <div class="content">
+                    <h3>Mens Navy BLue Solid Sweatshirt</h3>
+                    <h4>United Colors of Benetton</h4>
+                    <h5>Rs 2599</h5>
+                </div>
+            </a> -->
+
+        <input id="input" type="text" />
+        <button id="btn">Add to cart</button>
+        <div class="todos" id="todoid">
+
+        </div>
+
+    </div>
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
